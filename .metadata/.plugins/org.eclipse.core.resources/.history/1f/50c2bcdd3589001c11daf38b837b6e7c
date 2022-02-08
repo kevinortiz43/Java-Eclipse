@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class HWCalculator {
 
-	static double num1,num2, sum, sub, div, mult, x,y;
+	static double num1,num2, sum, sub, div, mult;
 	static Scanner scan = new Scanner(System.in);
 	
 	static double getNumbers1() {
@@ -19,6 +19,7 @@ public class HWCalculator {
 	}
 		
 	static double add() {
+		double x , y;
 		x= getNumbers1();
 		y = getNumbers2();
 		double sum = x+y; 
@@ -26,12 +27,14 @@ public class HWCalculator {
 	}
 	
 	static double subtract() {
+		double x , y;
 		x= getNumbers1();
 		y = getNumbers2();
 		double sub = x-y; 
 		return sub;
 	}
 	static double division() {
+		double x , y;
 		x= getNumbers1();
 		y = getNumbers2();
 	
@@ -39,6 +42,7 @@ public class HWCalculator {
 		return div;
 	}
 	static double multiplication() {
+		double x , y;
 		x= getNumbers1();
 		y = getNumbers2();
 		double mult= x*y; 
@@ -58,6 +62,8 @@ public class HWCalculator {
 		
 		switch (Selection) {
 			case 1:	
+			
+				
 			sum = add();
 			System.out.println("your result is "+sum);
 			break;

@@ -3,49 +3,30 @@ import java.util.Scanner;
 
 public class HWCalculator {
 
-	static double num1,num2, sum, sub, div, mult, x,y;
+	static double num1,num2, sum, sub, div, mult;
 	static Scanner scan = new Scanner(System.in);
 	
-	static double getNumbers1() {
-		System.out.println("Enter your first number");
-		int userNumber1 = scan.nextInt();
-		return userNumber1;
-	}
-
-	static double getNumbers2() {
-		System.out.println("Enter your second number");
-		int userNumber2 = scan.nextInt();
-		return userNumber2;
-	}
-		
-	static double add() {
-		x= getNumbers1();
-		y = getNumbers2();
+	static double add(double x, double y) {
 		double sum = x+y; 
 		return sum;
 	}
 	
-	static double subtract() {
-		x= getNumbers1();
-		y = getNumbers2();
+	static double subtract(double x, double y) {
+		System.out.println("Enter your first number");
+		System.out.println("Enter your second number");
+		
 		double sub = x-y; 
 		return sub;
 	}
-	static double division() {
-		x= getNumbers1();
-		y = getNumbers2();
-	
+	static double division(double x, double y) {
 		double div = x/y; 
 		return div;
 	}
-	static double multiplication() {
-		x= getNumbers1();
-		y = getNumbers2();
+	static double multiplication(double x, double y) {
 		double mult= x*y; 
 		return mult;
 	}
 	
-
 	
 	public static void main(String[] args) {
 		System.out.println("1 for addition");
@@ -55,25 +36,31 @@ public class HWCalculator {
 		System.out.println("5 to exit");
 		int Selection = scan.nextInt();
 		
+		int userNumber1 = scan.nextInt();
+		
+		int userNumber2= scan.nextInt();
+		
+	
+		
 		
 		switch (Selection) {
 			case 1:	
-			sum = add();
+			sum = add(userNumber1, userNumber2);
 			System.out.println("your result is "+sum);
 			break;
 
 			case 2:
-			sub= subtract();
+			sub= subtract(userNumber1, userNumber2);
 			System.out.println("your result is "+sub);
 			break;
 		
 			case 3:
-			mult = multiplication();
+			mult = multiplication(userNumber1, userNumber2);
 			System.out.println("your result is "+mult);
 			break;
 		
 			case 4:
-			div= division();
+			div= division(userNumber1, userNumber2);
 			System.out.println("your result is "+div);
 			break;
 			

@@ -58,6 +58,8 @@ public class HWCalculator {
 		
 		switch (Selection) {
 			case 1:	
+			
+				
 			sum = add();
 			System.out.println("your result is "+sum);
 			break;
