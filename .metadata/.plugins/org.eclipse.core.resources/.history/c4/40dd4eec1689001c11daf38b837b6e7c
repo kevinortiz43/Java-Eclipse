@@ -1,0 +1,27 @@
+package javaMethods;
+import java.util.Scanner;
+
+// we are calling call the methods directly static methods 
+
+public class Methods {
+	
+	static void MyMethod() {
+		
+		System.out.println("I just got executed!");
+		MyMethod1("From inisde Method");
+	}
+	
+	static void MyMethod1(String str) {
+		System.out.println(str);
+//		System.out.println("I just got executed again!!");
+	}
+	
+	
+public static void main(String[] args) {
+	
+	MyMethod();
+	MyMethod1("This is method1");
+	
+
+	}
+}

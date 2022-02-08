@@ -1,0 +1,23 @@
+package calculator;
+import java.util.Scanner;
+
+public class HWCalculator {
+	
+	
+	public static void main(String[] args) {
+		System.out.println("choose 1 for addition, 2 for subtraction, 3 for division, 4 for multiplication");
+		System.out.println("Enter your first number");
+		System.out.println("Enter your second number");
+		Scanner scan = new Scanner(System.in);
+		
+	}
+	
+	
+//	create switch case for add, subtract, multiply, divide, and exit
+//  take user input two numbers
+//	each one will have a method, it must take in two parameters, it must have a return
+//  add +, sub, -, divide /, multiply *
+//	exit will be System.exit(0);
+//	if the user enters an option aside from 1-5 display a default message "invalid entry, try again"
+
+}
