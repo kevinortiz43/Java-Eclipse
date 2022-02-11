@@ -8,7 +8,11 @@ public class HW1Variable {
 		int UserInput = scan.nextInt();
 
 		
-		String result=(UserInput >= 90) ? "A" : "F";
+		String result=(UserInput >= 90) ? "A"
+		:"F";
+		
+		
+		
 		System.out.println(result);
 		}
 

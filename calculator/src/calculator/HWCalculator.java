@@ -10,37 +10,64 @@ public class HWCalculator {
 		System.out.println("Enter your first number");
 		int userNumber1 = scan.nextInt();
 		return userNumber1;
+//		this static method we will do our instructions and do out int for our first user entered number
+//		
 	}
 
 	static double getNumbers2() {
 		System.out.println("Enter your second number");
 		int userNumber2 = scan.nextInt();
 		return userNumber2;
+//		this static method we will do our our instructions to the user and we will initialize the second user entered number
 	}
 		
 	static double add() {
 		x= getNumbers1();
-		y = getNumbers2();
+		y= getNumbers2();
+//		our x is calling back our first method
+//		it will print out the instructions
+//		ask for a input
+//		our y is calling back our second method
+//		it will print out the instructions
+//		ask for a input
 		double sum = x+y; 
 		return sum;
 	}
 	
 	static double subtract() {
+//		our x is calling back our first method
+//		it will print out the instructions
+//		ask for a input
+//		our y is calling back our second method
+//		it will print out the instructions
+//		ask for a input
 		x= getNumbers1();
-		y = getNumbers2();
+		y= getNumbers2();
 		double sub = x-y; 
 		return sub;
 	}
 	static double division() {
+//		our x is calling back our first method
+//		it will print out the instructions
+//		ask for a input
+//		our y is calling back our second method
+//		it will print out the instructions
+//		ask for a input
 		x= getNumbers1();
-		y = getNumbers2();
+		y= getNumbers2();
 	
 		double div = x/y; 
 		return div;
 	}
 	static double multiplication() {
+//		our x is calling back our first method
+//		it will print out the instructions
+//		ask for a input
+//		our y is calling back our second method
+//		it will print out the instructions
+//		ask for a input
 		x= getNumbers1();
-		y = getNumbers2();
+		y= getNumbers2();
 		double mult= x*y; 
 		return mult;
 	}
@@ -63,7 +90,7 @@ public class HWCalculator {
 			break;
 
 			case 2:
-			sub= subtract();
+			sub = subtract();
 			System.out.println("your result is "+sub);
 			break;
 		
@@ -73,7 +100,7 @@ public class HWCalculator {
 			break;
 		
 			case 4:
-			div= division();
+			div = division();
 			System.out.println("your result is "+div);
 			break;
 			
