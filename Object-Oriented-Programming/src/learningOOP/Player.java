@@ -7,14 +7,17 @@ public class Player {
 	String rank;
 	boolean active;
 	char gender;
-	String Lname;
+	String Lname; 
 //	static method
 	static String Country= "USA";
-	int i;
+	
+	PlayersComputer comp;
 	
 	
 //	empty constructor
-	public Player(){ }
+	public Player(){
+
+	}
 	
 //	constructors if you didn't write a constructor the JVM compiler will automatically create 
 //	an empty constructor
@@ -24,6 +27,7 @@ public class Player {
 	
 	public Player (String sport) {
 		this.sport = sport;
+		
 	};
 	
 //	creating parametised constructor
@@ -35,6 +39,7 @@ public class Player {
 	this.rank = rank;
 	this.active = active;
 	this.gender = gender;
+	comp = new PlayersComputer();	
 	}
 	
 	
@@ -51,8 +56,9 @@ public class Player {
 	 System.out.println(" Player rank is: "  + players.rank);
 	 System.out.println(" Player active? "  + players.active);
 //	 System.out.println("Player counter"  + players.Country);
-		System.out.println();
-		
+	System.out.println();
+
+	
 	}
 	
 	public void display() 
@@ -61,17 +67,20 @@ public class Player {
 		System.out.println(" Player name is: "  + name + " " + Lname );
 		 System.out.println(" Player rank is: "  + rank);
 		 System.out.println(" Player active? "  + active);
-//		 System.out.println("Player counter"  + players.Country);
+//		 System.out.println(comp.getGpu());
+	
+		 //		System.out.println("Player counter"  + players.Country);
 			System.out.println();
 		
 	}
+	
 	
 	public void display2 (Player categories) {
 		country();
 		System.out.println(categories.name + " " + categories.Lname);
 		System.out.println("keynum " + categories.keynum);
 		System.out.println("Player Sport: " + categories.sport);
-		System.out.println();		
+				
 	}
 	
 	
@@ -97,8 +106,10 @@ public class Player {
 			Player player1 = new Player();
 			Player player2 = new Player();
 			Player player3 = new Player();
-			
 			Player player4 = new Player("Robert" , "Baseball", 99 , "first base" , true , 'M');
+			
+			
+			
 			
 			player1.name = "Jack";
 			player1.sport = "Football";
@@ -108,6 +119,12 @@ public class Player {
 			player1.gender = 'M';
 			player1.Lname = "Torres";
 			
+//			player1.comp.setGpu("3090");
+//			player1.comp.setBrand("Dell");
+//			player1.comp.setCpu("Intel");
+//			player1.comp.setRamMemory(1);
+			
+			
 			player2.name = "Sophie";
 			player2.sport = "Soccer";
 			player2.keynum = 99;
@@ -115,6 +132,12 @@ public class Player {
 			player2.active = true;
 			player2.gender = 'F';
 			player2.Lname = "Osario";
+			
+//			player2.comp.setGpu("3090");
+//			player2.comp.setBrand("Dell");
+//			player2.comp.setCpu("Intel I9 ");
+//			player2.comp.setRamMemory(1);
+			
 			
 			
 			player3.name = "Tim";
@@ -125,6 +148,11 @@ public class Player {
 			player3.gender = 'M';
 			player3.Lname = "Lang";
 			
+//			player3.comp.setGpu("3090");
+//			player3.comp.setBrand("Dell");
+//			player3.comp.setCpu("Intel I9 ");
+//			player3.comp.setRamMemory(1);
+			
 			
 			player1.display(player1);
 			player2.display(player2);
@@ -133,9 +161,7 @@ public class Player {
 			
 			player1.display2(player1);
 			
-			player4.display3(player4);
-			
-			
+			player4.display3(player4);	
 			
 		}
 }

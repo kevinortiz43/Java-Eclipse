@@ -7,10 +7,7 @@ public class OOP1 {
 	
 	public static void main(String[] args) {		
 		
-		
-		
-		
-		
+
 		
 //	    class
 //		all of these things below class are called members of the class.
